@@ -1,0 +1,10 @@
+# Clone the repository you want
+git clone --mirror <git url> app/.git
+
+cd app
+
+# Unset the bare repository flag
+git config --unset core.bare
+
+# Checkout to the master branch
+git checkout master
