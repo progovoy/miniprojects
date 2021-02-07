@@ -8,3 +8,11 @@ git config --unset core.bare
 
 # Checkout to the master branch
 git checkout master
+
+
+To push:
+git checkout master
+git remote rename origin origin-old
+git remote add <ssh://git@new/remote.git>
+git push -u origin --all
+git push -u origin --tags
